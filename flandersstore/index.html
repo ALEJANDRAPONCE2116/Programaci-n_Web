@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatlander’s Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css"> <!--agrego el estilo css-->
+</head>
+
+<body>
+
+    <!--manejar datos que creados en app.js-->
+    <div ng-controller="StoreController as store">
+        <!--a traves de la palabra store voy a hacer referencia a
+        StoreController-->
+        <ul class="list-group">
+            <li class="list-group-item card" ng-repeat="product in store.products">
+                <div product-title ></div> <!--   -->
+                <product-gallery></product-gallery>
+                <product-panels></product-panels>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

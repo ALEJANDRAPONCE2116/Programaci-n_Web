@@ -1,0 +1,71 @@
+.ng-invalid.ng-dirty{ /*el elemento que estoy creando ya tiene un elemento y es invalido en el formulario*/
+    border-color: #fa787e;
+}
+
+.ng-valid.ng-dirty{
+    border-color: #78fa78;
+}
+
+.card{
+    border-radius: 2px;
+    margin: 0.5rem 0 0 0;
+}
+
+.gallery{
+    background:#f9f9f9 ;
+    border-top: 1px solid #ddd;
+    border-bottom: 1PX SOLID #ddd;
+    margin: 1rem -15px;
+}
+
+.thumbnail-wr{
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 0;
+}
+
+.thumbnails{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.block-link{
+    display: block;
+    padding: 0.5rem;
+}
+
+.small-image{
+    width: 6rem;
+}
+
+/*opacidad de cada uno de los elementos cuando le doy click*/
+.thumbnails > li{
+    position: relative;
+}
+
+.thumbnails > li> a> img{
+    opacity: 0.5
+}
+
+.thumbnails > li:hover> a> img{
+    opacity: 1
+}
+
+.thumbnails > li:active ::before,
+.thumbnails > li:active ::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 0.5rem solid transparent;
+    margin: -1px 0 0 -0.5rem;
+    border-top-color:#ccc;
+}
+
+.thumbnails > li:active ::before{
+    margin: 0 0 0 -0.5rem;
+    border-top-color: #ccc;
+}
+/*HOVER: elemento que maneja cuando se selecciona cuando se pone el cursor encima del li*/

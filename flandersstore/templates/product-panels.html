@@ -1,0 +1,17 @@
+<section>
+    <ul class="nav nav-pills">
+        <!--resaltar seccion seleccionada:-->
+        <li ng-class="{active: panels.isSelected(1)}"><a ng-click="panels.selectTab(1)">Description</a></li>
+        <li ng-class="{active: panels.isSelected(2)}"><a ng-click="panels.selectTab(2)">Specifications</a> </li>
+        <li ng-class="{active: panels.isSelected(3)}"><a ng-click="panels.selectTab(3)">Reviews</a></li>
+    </ul>
+    <div class="panel" ng-show="panels.isSelected(1)">
+        <div product-description></div>
+    </div>
+    <div class="panel" ng-show="panels.isSelected(2)">
+        <div product-specs></div>
+    </div>
+    <div class="panel" ng-show="panels.isSelected(3)">
+        <review-panels></review-panels>
+    </div>
+</section>

@@ -1,0 +1,53 @@
+<h4>Reviews</h4>
+        <blockquote ng-repeat="review in product.reviews">
+            <b>Stars: {{review.stars}}
+                <br>
+                {{review.body}}
+                <br>
+                <cite> by: {{review.author}}, createdOn:{{review.createdOn | date:'short'}} </em>
+        </blockquote>
+
+<h4>Submit a review</h4>
+        <form name="reviewForm" class="form-group" 
+        ng-submit="reviewForm.$valid && reviewCtlr.addReview(product)" novalidate>
+            <blockquote>
+                <b>Stars: {{reviewCtlr.review.stars}}
+                    <br>
+                    {{reviewCtlr.review.body}}
+                    <br>
+                    <cite> by: {{reviewCtlr.review.author}}</em>
+            </blockquote>
+            <fieldset class="form-group">
+                <label for="body">Add your stars</label>
+                <select name="" id="stars" class="form-control" ng-model="reviewCtlr.review.stars"
+                    required>
+                    <option value="">Rate the Product</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="body">Add you review text</label>
+                <textarea ng-model="reviewCtlr.review.body" class="form-control"
+                    placeholder="Write a short review of the product..."
+                    name="" 
+                    id="body" 
+                    cols="30"
+                    rows="10"
+                    required>
+                </textarea>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="author">Add your email</label>
+                <input ng-model="reviewCtlr.review.author" id="author" class="form-control" type="email"
+                    placeholder="jimmy@gmail.com" required/>
+            </fieldset>
+            <div>reviewForm is {{reviewForm.$valid}}</div>
+            <fieldset class="form-group">
+                <input type="submit" class="btn btn-primary pull-right" value="Submit Review" ng-disabled="!reviewForm.$valid"/>
+                <!--boton que permite enviar los datos del formulario-->
+            </fieldset>
+        </form>

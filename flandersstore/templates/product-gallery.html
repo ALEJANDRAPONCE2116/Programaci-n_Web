@@ -1,0 +1,15 @@
+<section class="gallery">
+    <img class="img center-block" ng-src="{{product.images[gallery.current]}}" alt="">
+    <!--listar todas las imagenes que tiene el producto-->
+    <div class="thumbnail-wr">
+        <ul class="clearfix thumbnails">
+            <li ng-class="{active: gallery.isSet($index)}" 
+            ng-repeat="image in product.images"
+            class="pull-left"> <!--elemento activo que va a tener la estructura de la galeria-->
+            <a href="" ng-click="gallery.setCurrent($index)" class="block-link">
+                <img class="small-image" ng-src="{{image}}" alt="">
+            </a>
+            </li>
+        </ul>
+    </div>
+</section>
