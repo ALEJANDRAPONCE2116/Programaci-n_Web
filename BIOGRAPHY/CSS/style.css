@@ -1,0 +1,42 @@
+/*color pagina*/
+
+body{
+    background-color: lightgrey;
+    text-align: center;
+   margin-left: 250px;
+    margin-right: 250px;
+    line-height : 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #191b1c;
+}
+
+.left1-text{
+    text-align: justify;
+}
+
+.blue-text{
+    color: #22524f;
+
+}
+
+.gold-text{
+    color: #301434  ;
+}
+
+.brown-text{
+    color: #321f1c;
+}
+
+.cite-text{
+   color: #3d4245 
+}
+
+.tittle-font{
+    font-weight: bold;
+    color: #3e0719;
+    
+}
+
+.font-font{
+    color: #3a0f0a;
+}

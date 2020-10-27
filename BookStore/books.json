@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "titulo": "El Juego de Ender",
+        "autor": "Orson Scott Card",
+        "editorial": "Ediciones B / Zeta",
+        "descripcion": "La Tierra está amenazada por una especie extraterrestre de insectos que pretende destruir la humanidad. Para vencerlos se precisa la intervención de un genio militar, por lo cual se permite el nacimiento de Ender,tercer hijo de una pareja en un mundo que limita a dos el número de descendientes. Ender se entrenará en una estación espacial, superará a sus rivales y seconvertirá en la persona capaz de dirigir las flotas terrestres contra losinsectos de otros mundos.",
+        "img": "../img/juegoender.jpg"
+        },
+        {
+        "id": "2",
+        "titulo": "Juego de tronos",
+        "autor": "George R. R. Martin",
+        "editorial": "Gigamesh",
+        "descripcion": "Tras el largo verano, el invierno se acerca a los SieteReinos. Lord Eddard Stark, señor de Invernalia, deja sus dominios para unirse a lacorte de su amigo el rey Robert Baratheon, llamado el Usurpador, hombre díscolo yotrora guerrero audaz cuyas mayores aficiones son comer, beber y engendrarbastardos. Eddard Stark ocupará el cargo de Mano del Rey e intentará desentrañaruna maraña de intrigas que pondrá en peligro su vida y la de todos los suyos. Enun mundo cuyas estaciones pueden durar decenios y en el que retazos de una magiainmemorial y olvidada surgen en los rincones más sombríos y maravillosos, latraición y la lealtad, la compasión y la sed de venganza, el amor y el poder hacendel juego de tronos una poderosa trampa que atrapará en sus fauces a lospersonajes... y al lector.",
+        "img": "../img/juegodetronos.gif"
+        },
+        {
+        "id": "3",
+        "titulo": "Yo robot",
+        "autor": "Isaac Asimov",
+        "editorial": "Edhasa",
+        "descripcion": "Los robots de Isaac Asimov son máquinas capaces de llevar acabo muy diversas tareas, y que a menudo se plantean a sí mismos problemas de'conducta humana'. Pero estas cuestiones se resuelven en Yo, robot en el ámbito delas tres leyes fundamentales de la robótica, concebidas por Asimov, y que no dejande proponer extraordinarias paradojas que a veces se explican por errores defuncionamiento y otras por la creciente complejidad de los 'programas'. Lasparadojas que se plantean en estos relatos futuristas no son sólo ingeniososejercicios intelectuales sino sobre todo una indagación sobre la situación delhombre actual en relación con los avances tecnológicos y con la experiencia deltiempo.",
+        "img": "../img/yorobot.jpg"
+        }
+ ] 

@@ -1,0 +1,15 @@
+<div  ng-controller= "ProductsController as products">
+    <a ui-sref="principal"> <h3>volver</h3></a>
+    <li ng-repeat="book in products.books">
+        
+        <div class="col-md-2" ng-if="book.id=='1'" >
+            <img class="img"  src= "{{book.img}}" alt="">
+           </div>
+           <div class="col-md-10" ng-if="book.id=='1'">
+           
+            <a href=""> <h3>{{book.titulo}}</h3></a>
+            <h5>{{book.editorial}}</h5>
+            <p>{{book.descripcion}}</p>
+        </div>   
+    </li>
+</div>
