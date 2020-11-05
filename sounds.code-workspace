@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "drumkit"
+		},
+		{
+			"path": "..\\..\\..\\Downloads\\sounds"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "drumkit"
+	}
+}

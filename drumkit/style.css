@@ -1,0 +1,51 @@
+html{
+    font-size: 10px;
+    background: url('https://images-ext-1.discordapp.net/external/4zZ5z7H2IzQ-bKgznlfuUE05rzhK-2h4jb0HCQofmzA/https/i.imgur.com/b9r5sEL.jpg?width=712&height=473') bottom center;
+    background-size: cover;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.keys{
+    display: flex;
+    flex: 1; /*un solo contenedor para a grila*/
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key{
+    border: .4rem solid black;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    transition: all 0.07s ease  ;/*permitir cambiar la forma en la que se genera la estructura cuando le doy cloick a la tecla *que se vea m'as grande)*/
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 4) ;
+    text-shadow: skyblue0 0 0.5rem black;
+}
+
+kdb{
+    display: block;
+    font-size: 4rem;
+}
+
+/*transforma la tecla que voy a utilizar*/
+.playing{
+    transform: scale(1.1);
+    border: yellow;
+    box-shadow: 0 0 1rem yellow;
+}
+
+/**/
+.sound{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: yellow;
+}

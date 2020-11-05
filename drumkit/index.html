@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="keys">
+        <div data-key="65" class="key"></div>
+        <kdb>A</kdb>
+        <span class="sound">clap</span>
+    </div>
+
+    <div data-key="83" class="key"></div>
+        <kdb>S</kdb>
+        <span class="sound">clap</span>
+    </div>
+
+    <div data-key="68" class="key"></div>
+        <kdb>D</kdb>
+        <span class="sound">clap</span>
+    </div>
+
+    <div data-key="70" class="key"></div>
+        <kdb>F</kdb>
+        <span class="sound">clap</span>
+    </div>
+
+    <div data-key="71" class="key"></div>
+        <kdb>A</kdb>
+        <span class="sound">clap</span>
+    </div>
+
+    <div data-key="72" class="key"></div>
+        <kdb>A</kdb>
+        <span class="sound">clap</span>
+    </div>
+
+    <div data-key="74" class="key"></div>
+        <kdb>J</kdb>
+        <span class="sound">clap</span>
+    </div>
+
+    <div data-key="75" class="key"></div>
+        <kdb>K</kdb>
+        <span class="sound">clap</span>
+    </div>
+
+    <div data-key="76" class="key"></div>
+        <kdb>L</kdb>
+        <span class="sound">clap</span>
+    </div>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/clap.wav"></audio>
+    <audio data-key="74" src="sounds/clap.wav"></audio>
+    <audio data-key="75" src="sounds/clap.wav"></audio>
+    <audio data-key="76" src="sounds/clap.wav"></audio>
+</body>
+
+<!--pequenias partes de javascript-->
+<script> 
+function removeTransition(){
+    if(event.propietyName!=='transform')return;
+    event.target.ClassList.remove('playing')
+}
+
+function playSound{
+    const audio=document.querySelector('audio[data-key]="${e.keyCode}"')
+    const key=document.querySelecto(div[data-key="${e.keyCode}"])
+}
+    const  keys = Array.from(document.querySelectorAll('.key'))
+    keys.forEach(key => key.addEventListener('transitioned', removeTransition))
+    window.addEventListener('keydown', playSound);
+</script>
+</html>

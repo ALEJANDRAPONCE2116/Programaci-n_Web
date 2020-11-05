@@ -1,17 +1,13 @@
 /*color pagina*/
-
 body{
-    background-color: lightgrey;
     text-align: center;
    margin-left: 250px;
     margin-right: 250px;
-    line-height : 28px;
-    font-family: 'Roboto', sans-serif;
+    background-image: url("https://www.designbolts.com/wp-content/uploads/2012/12/Noisy-Grid-Seamless-Pattern-For-Website-Background.jpg");
     color: #191b1c;
-}
-
-.left1-text{
-    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+   
+    
 }
 
 .blue-text{
@@ -37,6 +33,65 @@ body{
     
 }
 
-.font-font{
-    color: #3a0f0a;
+p{
+    font-size: 16px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+}
+h1{
+    font-family: Montserrat;
+}
+h3{
+    font-size: 20px;
+}
+h4{
+    font-size: 30px;
+}
+h5{
+    font: 17px;
+}
+ul{
+    text-align: justify;
+    margin-left: auto;
+    line-height : 20px;
+}
+.FB{
+    color: #451c4c;
+    font-size: 20px;
+    }
+    
+.closing{    
+    font-size: 10px;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+color: yellow;
+}
+
+div{
+
+    color: #806600 ;
+}
+
+text1{
+    line-height: 30px;
+    font-size: 12px;
+}
+
+br{
+    line-height : 10px;
+}
+
+section{
+        background-color: lightgrey;
+        text-align: center;
+        color: #191b1c;
+        font-family: 'Roboto', sans-serif;
+}
+.img{
+    border: hotpink;
 }
