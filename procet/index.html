@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--botones que realizan diferentes acciones con eventos-->
+    <p id="cosa">JavaScript puede cambiar esta cosa</p>
+    <button onclick="document.getElementById('cosa').innerHTML='Hello Word'">Start Script</button> 
+    <button onclick="document.getElementById('cosa').style.fontSize='60px'">Cambiar fuente</button>
+    <button onclick="document.getElementById('cosa').style.display='none'">Ocultar la etiqueta</button>
+    <button onclick="document.getElementById('cosa').style.display='block'">Mostrar la etiqueta</button>
+
+    <script>
+        document.getElementById('cosa').addEventListener('dblclick', dblclick()) //agregar a la etiqueta un elemento en especifico
+
+        function newTag(){
+            document.getElementById('cosa').innerHTML="esya es un nuevo texto en la etiqueta"
+        }
+
+       /* function doubleClickFunction(){
+            document.getElementById('cosa').addEventListener('dblclick', dblclick()) //agregar a la etiqueta un elemento en especifico
+        }*/
+        function dblclick(){
+            document.getElementById('cosa').innerHTML=" I make a double click"
+        }
+    </script>
+
+</body>
+</html>

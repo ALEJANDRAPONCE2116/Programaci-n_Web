@@ -1,0 +1,24 @@
+<!--DOM document object model-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <P id="cosa">da click en el boton para reemplazar este texto</P>
+    <button onclick="thing()">Click</button>
+    <script>
+        /*  document.getElementById('cosa').innerHTML="el titulo del documento es: "+document.title
+          document.getElementById('cosa').innerHTML="La URL del documento es: " + document.URL*/
+element = document.querySelector(selectores);
+        function thing() {
+            document.write("<h1> este es el nuevo texto </h1>")
+        }
+    </script>
+</body>
+
+</html>
