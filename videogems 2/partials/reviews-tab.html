@@ -1,0 +1,35 @@
+<div class="tab-pane" ng-show="prod.isSet(1)">
+    <ul class="reviews">
+        <li ng-repeat="review in prod.detail.reviews">
+            <blockquote>
+                <ul class="list-inline">
+                    <li class="list-inline-item m-0" ng-repeat="n in [] | range:review.stars">
+                        <i class="fa fa-star text-rose"></i>
+                    </li>
+                </ul>
+                <p>{{reiew.body}}</p>
+                <cite class="clearfix">- {{review.author}} on {{review.createdOn | date}}</cite>
+            </blockquote>
+        </li>
+    </ul>
+    <h5 class="mt-4">Add a Review</h5>
+    <p>Your email will not be published</p>
+    <div class="form-group bmd-form-group">
+        <label for="your-review" class="bmd-label-floating">Add your review</label>
+        <textarea type="text" class="form-control" id="your-review" rows="4"></textarea>
+        <span class="bmd-help">Your review will be awesome</span>
+    </div>
+    <div class="form-group bmd-form-group">
+        <label for="name-review" class="bmd-label-floating">Name</label>
+        <input type="text" class="form-control" id="name-review">
+        <span class="bmd-help">Let us know your email</span>
+    </div>
+    <div class="form-group bmd-form-group">
+        <label for="email-review" class="bmd-label-floating">Email</label>
+        <input type="email" class="form-control" id="email-review">
+        <span class="bmd-help">Let us know your email</span>
+    </div>
+    <div class="text-right pb-2">
+        <button type="button" class="btn btn-rose">Add Review</button>
+    </div>
+</div>

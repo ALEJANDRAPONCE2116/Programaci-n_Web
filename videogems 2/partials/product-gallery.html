@@ -1,0 +1,22 @@
+<div class="row-product-gallery mx-1">
+    <div class="col-12 mb-0">
+        <figure class="view overlay rounded z-depth-1 main-img">
+            <a href="" data-size="710x823">
+                <img ng-src="{{prod.detail.images[gallery.current]}}"
+                class="img-fluid z-depth-1 img-raised rounded" alt="">
+            </a>
+        </figure>
+    </div>
+    <div class="col-12">
+        <div class="row">
+            <div class="col-3" style="display: -webkit-box;">
+                <div class="view overlay rounded z-depth-1 gallery-item"
+                    ng-repeat="img in prod.detail.images track by $index"
+                    ng-class="{active: gallery.isSet($index)}">
+                    <img ng-click="gallery.setCurrent($index)" class="img-fluid img-raised rounded" ng-src="{{img}}" alt="">
+                    <div class="mask rgba-white slight"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
